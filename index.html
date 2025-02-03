@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResidentialApp - Gestión para Clústeres</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ResidentialApp</div>
+        <nav>
+            <ul>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#pricing">Planes</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Gestión eficiente para tu clúster residencial</h1>
+        <p>Administra proyectos, usuarios y rentistas de forma sencilla y rápida.</p>
+        <button onclick="scrollToContact()">Solicitar Información</button>
+    </section>
+
+    <section id="features">
+        <h2>Características principales</h2>
+        <div class="features-container">
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>Gestión de Usuarios</h3>
+                <p>Administra propietarios y rentistas en un solo lugar.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-tasks"></i>
+                <h3>Gestión de Actividades</h3>
+                <p>Organiza y programa eventos y proyectos para el clúster.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Control de Pagos</h3>
+                <p>Administra cuotas, servicios y pagos de manera digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Planes de Suscripción</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Básico</h3>
+                <p>Gestión de usuarios y actividades.</p>
+                <span>$9.99/mes</span>
+                <button>Empezar</button>
+            </div>
+            <div class="plan popular">
+                <h3>Pro</h3>
+                <p>Incluye control de pagos y reportes avanzados.</p>
+                <span>$19.99/mes</span>
+                <button>Empezar</button>
+            </div>
+            <div class="plan">
+                <h3>Premium</h3>
+                <p>Soporte 24/7 y herramientas avanzadas de análisis.</p>
+                <span>$29.99/mes</span>
+                <button>Empezar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Solicita más información</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Tu Nombre" required>
+            <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+            <textarea id="message" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="form-response"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ResidentialApp. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
